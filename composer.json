@@ -1,0 +1,41 @@
+{
+    "name": "stevenmaguire/schemas-php",
+    "type": "library",
+    "description": "The purpose of this package is to provide a set of common interfaces for official Schema.org data structures.",
+    "keywords": [
+        "schema.org",
+        "schema",
+        "organization",
+        "official",
+        "contracts",
+        "interface"
+    ],
+    "homepage": "https://github.com/stevenmaguire/schemas-php",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Steven Maguire",
+            "email": "stevenmaguire@gmail.com",
+            "homepage": "https://github.com/stevenmaguire"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": ">=4.6",
+        "phpunit/php-code-coverage": "~2.0",
+        "mockery/mockery": ">=0.9.4",
+        "squizlabs/php_codesniffer": "~2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Stevenmaguire\\Schemas\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Stevenmaguire\\Schemas\\Test\\": "tests/src/"
+        }
+    }
+}
