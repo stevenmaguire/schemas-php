@@ -14,7 +14,9 @@ interface JobPosting extends Intangible
     /**
      * Sets baseSalary.
      *
-     * @param float $baseSalary
+     * The base salary of the job or of an employee in an EmployeeRole.
+     *
+     * @param \Stevenmaguire\Schemas\PriceSpecification|integer|float $baseSalary
      *
      * @return \Stevenmaguire\Schemas\JobPosting
      */
@@ -28,23 +30,9 @@ interface JobPosting extends Intangible
     public function getBaseSalary();
 
     /**
-     * Sets jobBenefits.
-     *
-     * @param string $jobBenefits
-     *
-     * @return \Stevenmaguire\Schemas\JobPosting
-     */
-    public function setJobBenefits($jobBenefits);
-
-    /**
-     * Gets jobBenefits.
-     *
-     * @return string
-     */
-    public function getJobBenefits();
-
-    /**
      * Sets datePosted.
+     *
+     * Publication date for the job posting.
      *
      * @param \DateTime $datePosted
      *
@@ -62,6 +50,8 @@ interface JobPosting extends Intangible
     /**
      * Sets educationRequirements.
      *
+     * Educational background needed for the position.
+     *
      * @param string $educationRequirements
      *
      * @return \Stevenmaguire\Schemas\JobPosting
@@ -77,6 +67,9 @@ interface JobPosting extends Intangible
 
     /**
      * Sets employmentType.
+     *
+     * Type of employment (e.g. full-time, part-time, contract, temporary,
+     * seasonal, internship).
      *
      * @param string $employmentType
      *
@@ -94,6 +87,8 @@ interface JobPosting extends Intangible
     /**
      * Sets experienceRequirements.
      *
+     * Description of skills and experience needed for the position.
+     *
      * @param string $experienceRequirements
      *
      * @return \Stevenmaguire\Schemas\JobPosting
@@ -109,6 +104,8 @@ interface JobPosting extends Intangible
 
     /**
      * Sets hiringOrganization.
+     *
+     * Organization offering the job position.
      *
      * @param \Stevenmaguire\Schemas\Organization $hiringOrganization
      *
@@ -126,6 +123,9 @@ interface JobPosting extends Intangible
     /**
      * Sets incentiveCompensation.
      *
+     * Description of bonus and commission compensation aspects of the job.
+     * Supersedes incentives.
+     *
      * @param string $incentiveCompensation
      *
      * @return \Stevenmaguire\Schemas\JobPosting
@@ -142,6 +142,8 @@ interface JobPosting extends Intangible
     /**
      * Sets industry.
      *
+     * The industry associated with the job position.
+     *
      * @param string $industry
      *
      * @return \Stevenmaguire\Schemas\JobPosting
@@ -156,7 +158,27 @@ interface JobPosting extends Intangible
     public function getIndustry();
 
     /**
+     * Sets jobBenefits.
+     *
+     * Description of benefits associated with the job. Supersedes benefits.
+     *
+     * @param string $jobBenefits
+     *
+     * @return \Stevenmaguire\Schemas\JobPosting
+     */
+    public function setJobBenefits($jobBenefits);
+
+    /**
+     * Gets jobBenefits.
+     *
+     * @return string
+     */
+    public function getJobBenefits();
+
+    /**
      * Sets jobLocation.
+     *
+     * A (typically single) geographic location associated with the job position.
      *
      * @param \Stevenmaguire\Schemas\Place $jobLocation
      *
@@ -174,6 +196,12 @@ interface JobPosting extends Intangible
     /**
      * Sets occupationalCategory.
      *
+     * Category or categories describing the job. Use BLS O*NET-SOC taxonomy.
+     * Ideally includes textual label and formal code, with the property
+     * repeated for each applicable value.
+     *
+     * @see http://www.onetcenter.org/taxonomy.html BLS O*NET-SOC taxonomy
+     *
      * @param string $occupationalCategory
      *
      * @return \Stevenmaguire\Schemas\JobPosting
@@ -190,6 +218,8 @@ interface JobPosting extends Intangible
     /**
      * Sets qualifications.
      *
+     * Specific qualifications required for this role.
+     *
      * @param string $qualifications
      *
      * @return \Stevenmaguire\Schemas\JobPosting
@@ -202,8 +232,11 @@ interface JobPosting extends Intangible
      * @return string
      */
     public function getQualifications();
+
     /**
      * Sets responsibilities.
+     *
+     * Responsibilities associated with this role.
      *
      * @param string $responsibilities
      *
@@ -221,6 +254,11 @@ interface JobPosting extends Intangible
     /**
      * Sets salaryCurrency.
      *
+     * The currency (coded using ISO 4217) used for the main salary information
+     * in this job posting or for this employee.
+     *
+     * @see  http://en.wikipedia.org/wiki/ISO_4217 ISO 4217
+     *
      * @param string $salaryCurrency
      *
      * @return \Stevenmaguire\Schemas\JobPosting
@@ -236,6 +274,8 @@ interface JobPosting extends Intangible
 
     /**
      * Sets skills.
+     *
+     * Skills required to fulfill this role.
      *
      * @param string $skills
      *
@@ -253,6 +293,9 @@ interface JobPosting extends Intangible
     /**
      * Sets specialCommitments.
      *
+     * Any special commitments associated with this job posting. Valid entries
+     * include VeteranCommit, MilitarySpouseCommit, etc.
+     *
      * @param string $specialCommitments
      *
      * @return \Stevenmaguire\Schemas\JobPosting
@@ -269,6 +312,8 @@ interface JobPosting extends Intangible
     /**
      * Sets title.
      *
+     * The title of the job.
+     *
      * @param string $title
      *
      * @return \Stevenmaguire\Schemas\JobPosting
@@ -284,6 +329,8 @@ interface JobPosting extends Intangible
 
     /**
      * Sets workHours.
+     *
+     * The typical working hours for this job (e.g. 1st shift, night shift, 8am-5pm).
      *
      * @param string $workHours
      *

@@ -13,6 +13,7 @@
 |[CreativeWork](http://schema.org/CreativeWork)|![tested]|
 |[Intangible](http://schema.org/Intangible)|![tested]|
 |[JobPosting](http://schema.org/JobPosting)|![tested]|
+|[PostalAddress](http://schema.org/PostalAddress)|![tested]|
 
 ## Started
 |Schema|Status|
@@ -30,15 +31,16 @@
 |[Audience](http://schema.org/Audience)|![stubbed]|
 |[Quantity](http://schema.org/Quantity)|![stubbed]|
 |[Duration](http://schema.org/Duration)|![stubbed]|
+|[PriceSpecification](http://schema.org/PriceSpecification)|![stubbed]|
 |[Rating](http://schema.org/Rating)|![stubbed]|
 |[AggregateRating](http://schema.org/AggregateRating)|![stubbed]|
 |[StructuredValue](http://schema.org/StructuredValue)|![stubbed]|
 |[ContactPoint](http://schema.org/ContactPoint)|![stubbed]|
-|[PostalAddress](http://schema.org/PostalAddress)|![stubbed]|
 |[InteractionCounter](http://schema.org/InteractionCounter)|![stubbed]|
 |[Organization](http://schema.org/Organization)|![stubbed]|
 |[Person](http://schema.org/Person)|![stubbed]|
 |[Place](http://schema.org/Place)|![stubbed]|
+|[Brand](http://schema.org/Brand)|![stubbed]|
 
 ## Backlog
 |Schema|Status|
@@ -270,7 +272,6 @@
 |[PeopleAudience](http://schema.org/PeopleAudience)|![notstarted]|
 |[MedicalAudience](http://schema.org/MedicalAudience)|![notstarted]|
 |[ParentAudience](http://schema.org/ParentAudience)|![notstarted]|
-|[Brand](http://schema.org/Brand)|![notstarted]|
 |[BroadcastChannel](http://schema.org/BroadcastChannel)|![notstarted]|
 |[RadioChannel](http://schema.org/RadioChannel)|![notstarted]|
 |[TelevisionChannel](http://schema.org/TelevisionChannel)|![notstarted]|
@@ -394,7 +395,6 @@
 |[NutritionInformation](http://schema.org/NutritionInformation)|![notstarted]|
 |[OpeningHoursSpecification](http://schema.org/OpeningHoursSpecification)|![notstarted]|
 |[OwnershipInfo](http://schema.org/OwnershipInfo)|![notstarted]|
-|[PriceSpecification](http://schema.org/PriceSpecification)|![notstarted]|
 |[DeliveryChargeSpecification](http://schema.org/DeliveryChargeSpecification)|![notstarted]|
 |[PaymentChargeSpecification](http://schema.org/PaymentChargeSpecification)|![notstarted]|
 |[UnitPriceSpecification](http://schema.org/UnitPriceSpecification)|![notstarted]|
